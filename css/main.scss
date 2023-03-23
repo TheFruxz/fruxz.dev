@@ -63,6 +63,11 @@ body {
   gap: var(--gap);
   padding-top: var(--gap);
 
+  .inside-box {
+    width: 80vw;
+    margin-left: 5vw;
+  }
+
   section.banner {
     --height: 20rem;
 
@@ -119,8 +124,7 @@ body {
   }
 
   section.poem {
-    width: 80vw;
-    margin-left: 5vw;
+    @extend .inside-box;
 
     transform: translateY(calc(var(--poem-scroll) * .05));
 
@@ -150,7 +154,7 @@ body {
   .gallery {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 2rem;
 
     .entry {

@@ -53,6 +53,10 @@ body {
   gap: var(--gap);
   padding-top: var(--gap);
 }
+.body .inside-box, .body section.poem {
+  width: 80vw;
+  margin-left: 5vw;
+}
 .body section.banner {
   --height: 20rem;
   width: 100%;
@@ -96,8 +100,6 @@ body {
   color: black;
 }
 .body section.poem {
-  width: 80vw;
-  margin-left: 5vw;
   transform: translateY(calc(var(--poem-scroll) * 0.05));
 }
 .body section.poem .poem-text {
@@ -119,7 +121,7 @@ body {
 .body .gallery {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 2rem;
 }
 .body .gallery .entry {

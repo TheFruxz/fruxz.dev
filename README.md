@@ -1,0 +1,1 @@
+# fruxz.dev

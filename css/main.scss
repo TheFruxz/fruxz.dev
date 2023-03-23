@@ -1,0 +1,252 @@
+:root {
+  --headline-size: 2rem;
+}
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Titillium Web", sans-serif;
+
+}
+
+.home {
+  display: flex;
+  width: 100vw;
+  height: 40rem;
+
+  .left {
+    width: 50%;
+    background: url("../assets/cat-han-W_5Eakb1598-unsplash.jpg") top;
+    background-size: cover;
+    background-position-y: calc(var(--scroll) * -.3);
+
+    color: white;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      margin: calc(-.3 * var(--scroll)) 0 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: var(--headline-size);
+    }
+
+  }
+
+  .right {
+    width: 50%;
+    background: url("../assets/horology-hands-9o84rVLu87s-unsplash.jpg") bottom;
+    background-size: cover;
+    background-position-y: calc(var(--scroll) * .5);
+  }
+
+}
+
+.body {
+  --gap: 10rem;
+
+  width: 90vw;
+  max-width: 90vw;
+  overflow: hidden;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding-top: var(--gap);
+
+  section.banner {
+    --height: 20rem;
+
+    width: 100%;
+    height: var(--height);
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    div.text {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      p {
+        font-size: var(--headline-size);
+        letter-spacing: calc(var(--poem-scroll) * -.001);
+        text-align: center;
+        font-weight: 600;
+      }
+
+      img {
+        height: var(--headline-size)
+      }
+
+    }
+
+    a.icon {
+      position: absolute;
+      margin-top: calc(var(--height) * .70);
+
+      img {
+        height: 2rem;
+        filter: opacity(.6);
+      }
+    }
+
+  }
+
+  .poem-text {
+
+    color: rgba(black, 44%);
+
+    .highlight {
+      color: black;
+    }
+
+  }
+
+  section.poem {
+    width: 80vw;
+    margin-left: 5vw;
+
+    transform: translateY(calc(var(--poem-scroll) * .05));
+
+    .poem-text {
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+  }
+
+  section .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  section.open {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    p {
+      margin-top: 0;
+    }
+
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+
+    .entry {
+      border-radius: 15px;
+      height: 12rem;
+      aspect-ratio: 2.2 / 1;
+      background-color: #222;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      flex-shrink: 1;
+      box-sizing: content-box;
+
+      .inner {
+        padding-left: 3rem;
+        margin: 4px;
+        border-radius: inherit;
+        height: calc(100% - 10px);
+        aspect-ratio: 2.2 / 1;
+
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+          color: #fff;
+          font-size: 2rem;
+          font-weight: 600;
+          text-shadow: 0 0 15px rgba(black, 50%);
+        }
+
+      }
+
+    }
+
+  }
+
+  section.showroom {
+    width: 80vw;
+    margin-left: 5vw;
+    min-height: 30vh;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+.ll {
+  width: 100%;
+  height: 20vh;
+}
+
+.l1 {
+  background: linear-gradient(
+
+          #2176ae,
+          #3a74a3,
+          #527397,
+          #6b718c,
+          #837080,
+          #9c6e75,
+          #b46d69,
+          #cd6b5e,
+          #e56a52,
+          #fe6847
+  );
+}
+
+.l2 {
+  background: linear-gradient(
+                  #2176ae,
+                  #4b739b,
+                  #67728d,
+                  #7b7084,
+                  #896f7d,
+                  #966f78,
+                  #a46e71,
+                  #b86c68,
+                  #d46b5a,
+                  #fe6847
+  );
+}
+
+.l3 {
+  background: linear-gradient(
+                  #2176ae,
+                  #5c7293,
+                  #7d7083,
+                  #8b6f7c,
+                  #8f6f7b,
+                  #906f7a,
+                  #946f79,
+                  #a26e72,
+                  #c36c62,
+                  #fe6847
+  );
+}
